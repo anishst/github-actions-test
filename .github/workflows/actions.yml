@@ -14,4 +14,5 @@ jobs:
           # inputs for action
           who-to-greet: Anish
       - name: Log greeting time
-        run: echo "${{ steps.greet.ouputs.time }}"
+      # get time of greeting using id (greet) from simple JS action
+        run: echo "${{ steps.greet.outputs.time }}"
