@@ -6,6 +6,12 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v2
+      - name: list files in repository
+        run: |
+          pwd
+          ls -a
       - name: echo a string
         run: echo "Hello world!"
       - name: multiline script
